@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TVUserDefaultViewController" customModule="传值" customModuleProvider="target">
+            <connections>
+                <outlet property="input" destination="ETP-Bt-gMr" id="UIi-QH-eNm"/>
+                <outlet property="jump" destination="MP2-NC-MyJ" id="2Le-Px-GCY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MP2-NC-MyJ">
+                    <rect key="frame" x="8" y="304" width="30" height="30"/>
+                    <state key="normal" title="跳转"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ETP-Bt-gMr">
+                    <rect key="frame" x="8" y="256" width="170" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="WC2-qF-8uO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ETP-Bt-gMr" firstAttribute="leading" secondItem="MP2-NC-MyJ" secondAttribute="leading" id="5pS-hd-lUV"/>
+                <constraint firstAttribute="bottom" secondItem="MP2-NC-MyJ" secondAttribute="bottom" constant="266" id="pHL-4f-m6s"/>
+                <constraint firstItem="MP2-NC-MyJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="srr-tH-syR"/>
+                <constraint firstItem="MP2-NC-MyJ" firstAttribute="top" secondItem="ETP-Bt-gMr" secondAttribute="bottom" constant="18" id="wW4-ls-VHP"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
