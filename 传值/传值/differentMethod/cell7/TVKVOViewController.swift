@@ -33,9 +33,11 @@ class TVKVOViewController: UIViewController {
     
     
     func login() {
-        
-        
         self.navigationController?.pushViewController(goal, animated: true)
+    }
+    
+    deinit {
+        goal.removeObserver(self, forKeyPath: "username")
     }
     
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
